@@ -184,23 +184,9 @@
             return;
         }
         
-        // Simulate API call with timeout
+       
         setTimeout(() => {
-            // In a real application, this would call your API endpoint
-            /*
-            fetch("/predict", {
-                method: "POST",
-                headers: {
-                    "Content-Type": "application/json"
-                },
-                body: JSON.stringify({
-                    "Size": parseInt(size),
-                    "Bedrooms": parseInt(bedrooms),
-                    "Age": parseInt(age)
-                })
-            })
-            .then(response => response.json())
-            .then(data => {
+           {
                 document.getElementById('result').innerText = "Predicted Price: " + data["Predicted Price"];
                 document.getElementById('result').style.display = 'block';
                 document.getElementById('loading').style.display = 'none';
@@ -210,8 +196,6 @@
                 document.getElementById('loading').style.display = 'none';
             });
             */
-            
-            // For demo purposes, calculate a simple price
             const basePrice = 150000;
             const sizePrice = size * 100;
             const bedroomPrice = bedrooms * 25000;
